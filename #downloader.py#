@@ -1,0 +1,6 @@
+import requests
+
+class Downloader(object):
+	def download(self, url):
+		r = requests.get(url)
+		return r.text
